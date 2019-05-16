@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="204px" height="154px" viewBox="0 0 204 154" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Hole</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M155.415457,3.70528186 C128.864531,16.0244919 107.451619,31.8019861 80.8376395,40.9938106 L80.8376395,40.9938106 C57.7389123,48.9720488 27.7576823,42.8718134 11.5467126,62.0063142 L11.5467126,62.0063142 C-32.8642159,114.426255 69.7550495,181.22763 125.739863,155.792958 L125.739863,155.792958 C147.908545,145.721065 153.787441,125.723957 162.684164,103.563349 L162.684164,103.563349 C170.677991,83.6570421 181.930476,71.7036541 193.826636,55.030376 L193.826636,55.030376 C201.097971,44.8379978 204.136816,35.8862713 204.198994,28.3340979 L204.198994,28.3340979 L204.198994,27.8565212 C204.048366,10.231582 187.579926,0.371848571 171.154398,0.372721654 L171.154398,0.372721654 C165.704619,0.373594738 160.257467,1.45883769 155.415457,3.70528186" id="path-1"></path>
+        <path d="M155.415457,3.70528186 C128.864531,16.0244919 107.451619,31.8019861 80.8376395,40.9938106 L80.8376395,40.9938106 C57.7389123,48.9720488 27.7576823,42.8718134 11.5467126,62.0063142 L11.5467126,62.0063142 C-32.8642159,114.426255 69.7550495,181.22763 125.739863,155.792958 L125.739863,155.792958 C147.908545,145.721065 153.787441,125.723957 162.684164,103.563349 L162.684164,103.563349 C170.677991,83.6570421 181.930476,71.7036541 193.826636,55.030376 L193.826636,55.030376 C201.097971,44.8379978 204.136816,35.8862713 204.198994,28.3340979 L204.198994,28.3340979 L204.198994,27.8565212 C204.048366,10.231582 187.579926,0.371848571 171.154398,0.372721654 L171.154398,0.372721654 C165.704619,0.373594738 160.257467,1.45883769 155.415457,3.70528186" id="path-3"></path>
+        <filter x="-0.7%" y="-0.9%" width="101.5%" height="101.9%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop/Homepage" transform="translate(-961.000000, -2033.000000)">
+            <g id="Hole" transform="translate(-139.000000, 1019.000000)">
+                <g transform="translate(1189.199606, 1097.835348) rotate(52.000000) translate(-1189.199606, -1097.835348) translate(1086.699606, 1016.835348)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <g id="Fill-1" mask="url(#mask-2)">
+                        <use fill="#09063D" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> xel | Execute your tasks on XEL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Take advantage of XEL&#x2019;s network massive power resources and execute any computational task, while avoiding the cost of deploying cloud services or purchasing your own hardware.">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+    <meta property="og:site_name" content="xel">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="xel | Execute your tasks on XEL">
+    <meta property="og:description" content="Take advantage of XEL&#x2019;s network massive power resources and execute any computational task, while avoiding the cost of deploying cloud services or purchasing your own hardware.">
+    <meta property="og:url" content="https://xel.org/taker.html">
+    <meta property="og:image" content="https://xel.org/assets/images/facebook.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="xel | Execute your tasks on XEL">
+    <meta name="twitter:description" content="Take advantage of XEL&#x2019;s network massive power resources and execute any computational task, while avoiding the cost of deploying cloud services or purchasing your own hardware.">
+    <meta name="twitter:url" content="https://xel.org/taker.html">
+    <meta name="twitter:image" content="https://xel.org/assets/images/twitter.png">
+
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Poppins" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#ffffff">
+
+  </head>
+
+  <body>
+    <script type="text/javascript" src="dependencies/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="dependencies/jquery/jquery.bcSwipe.min.js"></script>
+    <script type="text/javascript" src="dependencies/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/nav.js"></script>
+    <script type="text/javascript" src="dependencies/animejs/anime.min.js"></script>
+    <script type="text/javascript" src="dependencies/clipboard/clipboard.min.js"></script>
+    <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="assets/css/xel.style.css" data-autorefresh="true">
+
+
+
+    <div class="takerpage">
+      <div class="navbar1 nav-desktop content-container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="index.html">
+            <img id="nav_black_logo" src="assets/images/xel_black.svg" alt="Xel logo">
+            <img id="exp_black_logo" src="assets/images/xel_black.svg" alt="Xel logo"><span id="nav-xel">xel</span>
+            <div id="xeldocs"><span id="xeldocs1">xel</span><span id="xeldocs2">Docs</span></div>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fas fa-bars open-toggle"></span>
+            <span class="fas fa-times close-toggle"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <div class="nav-container">
+                <div class="navlinks" id="generalnav">
+                  <li class="nav-item dropdown dropdown-desktop">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Installation
+                    </a>
+                    <div id="navbarDropdownMenu" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="xelinewallet.html">XELINE Wallet</a>
+                      <a class="dropdown-item" href="litewallet.html">Lite Wallet</a>
+                      <a class="dropdown-item" href="miner.html">XEL Miner</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown-mobile">
+                    <a id="mobileInstallation" class="nav-link" href="JavaScript:Void(0);">Installation</a>
+                  </li>
+                  <div id="mobileInstallationMenu" class="dropdown-menu-mobile dropdown-mobile">
+                    <li>
+                      <a class="dropdown-item" href="xelinewallet.html">XELINE Wallet</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="litewallet.html">Lite Wallet</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="miner.html">XEL Miner</a>
+                    </li>
+                  </div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://explorer.xel.org/" target="_blank">explorer</a>
+                  </li>
+                  <li class="nav-item dropdown dropdown-desktop">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      DOCS
+                    </a>
+                    <div id="navbarDropdownMenu2" class="dropdown-menu docs" aria-labelledby="navbarDropdownMenuLink2">
+                      <a class="dropdown-item" target="_blank" href="http://docs.xel.org/submit-task.html">How to submit your task</a>
+                      <a class="dropdown-item" target="_blank" href="http://docs.xel.org/give-power.html">How to provide power</a>
+                      <a class="dropdown-item" target="_blank" href="http://docs.xel.org/learn-epl.html">Learn ePL</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown-mobile">
+                    <a id="mobileDocs" class="nav-link" href="JavaScript:Void(0);">docs</a>
+                  </li>
+                  <div id="mobileDocsMenu" class="dropdown-menu-mobile dropdown-mobile">
+                    <li>
+                      <a class="dropdown-item" target="_blank" href="http://docs.xel.org/submit-task.html">How to submit your task</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" target="_blank" href="http://docs.xel.org/give-power.html">How to provide power</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" target="_blank" href="http://docs.xel.org/learn-epl.html">Learn ePL</a>
+                    </li>
+                  </div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://link.xel.org/whitepaper" target="_blank">whitepaper</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/xel-software" target="_blank">github</a>
+                  </li>
+                </div>
+                <div class="navlinks" id="navfordocs">
+                  <li class="nav-item">
+                    <a class="nav-link" id="navtask" href="submit-task.html">submit your task</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="navpower" href="give-power.html">provide power</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="navepl" href="learn-epl.html">learn epl</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">xel homepage</a>
+                  </li>
+                </div>
+                <div class="dropdown-mobile navsocials">
+                  <div class="line"></div>
+                  <div class="socials-mobile">
+                    <a class="social discord" href="https://link.xel.org/discord" target="_blank">
+                      <img src="assets/images/discord.svg" alt="">
+                    </a>
+                    <a class="social reddit" href="https://link.xel.org/reddit" target="_blank">
+                      <img src="assets/images/reddit.svg" alt="">
+                    </a>
+                    <a class="social twitter" href="https://link.xel.org/twitter" target="_blank">
+                      <img src="assets/images/twitter.svg" alt="">
+                    </a>
+                    <a class="social btctalk" href="https://link.xel.org/bitcointalk" target="_blank">
+                      <img src="assets/images/btc.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="navbar1 nav-mobile content-container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="index.html">
+            <img id="nav_black_logo" src="assets/images/xel_white.svg" alt="Xel logo">
+            <img id="exp_black_logo" src="assets/images/xel_black.svg" alt="Xel logo"><span id="nav-xel">xel</span>
+            <div id="xeldocs"><span id="xeldocs1">xel</span><span id="xeldocs2">Docs</span></div>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fas fa-bars open-toggle"></span>
+            <span class="fas fa-times close-toggle"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <div class="nav-container">
+                <div class="navlinks" id="generalnav">
+                  <li class="nav-item dropdown dropdown-desktop">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Installation
+                    </a>
+                    <div id="navbarDropdownMenu" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="xelinewallet.html">XELINE Wallet</a>
+                      <a class="dropdown-item" href="litewallet.html">Lite Wallet</a>
+                      <a class="dropdown-item" href="miner.html">XEL Miner</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown-mobile">
+                    <a id="mobileInstallation" class="nav-link" href="JavaScript:Void(0);">Installation</a>
+                  </li>
+                  <div id="mobileInstallationMenu" class="dropdown-menu-mobile dropdown-mobile">
+                    <li>
+                      <a class="dropdown-item" href="xelinewallet.html">XELINE Wallet</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="litewallet.html">Lite Wallet</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="miner.html">XEL Miner</a>
+                    </li>
+                  </div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://explorer.xel.org/" target="_blank">explorer</a>
+                  </li>
+                  <li class="nav-item dropdown dropdown-desktop">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      DOCS
+                    </a>
+                    <div id="navbarDropdownMenu2" class="dropdown-menu docs" aria-labelledby="navbarDropdownMenuLink2">
+                      <a class="dropdown-item" target="_blank" href="http://docs.xel.org/submit-task.html">How to submit your task</a>
+                      <a class="dropdown-item" target="_blank" href="http://docs.xel.org/give-power.html">How to provide power</a>
+                      <a class="dropdown-item" target="_blank" href="http://docs.xel.org/learn-epl.html">Learn ePL</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown-mobile">
+                    <a id="mobileDocs" class="nav-link" href="JavaScript:Void(0);">docs</a>
+                  </li>
+                  <div id="mobileDocsMenu" class="dropdown-menu-mobile dropdown-mobile">
+                    <li>
+                      <a class="dropdown-item" target="_blank" href="http://docs.xel.org/submit-task.html">How to submit your task</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" target="_blank" href="http://docs.xel.org/give-power.html">How to provide power</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" target="_blank" href="http://docs.xel.org/learn-epl.html">Learn ePL</a>
+                    </li>
+                  </div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://link.xel.org/whitepaper" target="_blank">whitepaper</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/xel-software" target="_blank">github</a>
+                  </li>
+                </div>
+                <div class="navlinks" id="navfordocs">
+                  <li class="nav-item">
+                    <a class="nav-link" id="navtask" href="submit-task.html">submit your task</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="navpower" href="give-power.html">provide power</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="navepl" href="learn-epl.html">learn epl</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">xel homepage</a>
+                  </li>
+                </div>
+                <div class="dropdown-mobile navsocials">
+                  <div class="line"></div>
+                  <div class="socials-mobile">
+                    <a class="social discord" href="https://link.xel.org/discord" target="_blank">
+                      <img src="assets/images/discord.svg" alt="">
+                    </a>
+                    <a class="social reddit" href="https://link.xel.org/reddit" target="_blank">
+                      <img src="assets/images/reddit.svg" alt="">
+                    </a>
+                    <a class="social twitter" href="https://link.xel.org/twitter" target="_blank">
+                      <img src="assets/images/twitter.svg" alt="">
+                    </a>
+                    <a class="social btctalk" href="https://link.xel.org/bitcointalk" target="_blank">
+                      <img src="assets/images/btc.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="content-container">
+        <div class="taker row">
+          <div class="col-md-6">
+            <div class="tagline">
+              <article>
+                <div class="top Taker">
+                  <h2 class="tag-title">Execute your tasks on XEL</h2>
+                  <div class="line"></div>
+                </div>
+                <p class="tag-text">
+
+                  Avoid the cost of purchasing your own hardware or renting cloud services to execute resource intensive computational tasks. You can use XEL&#x2019;s massive power resources and select the time you need for your task, while setting the price you are willing to pay, as a bounty reward. With XEL, you are controlling the cost of executing computations.
+                  <br>
+                  <br>
+                  <br>
+                  XEL&#x2019;s highly flexible system enables you to execute any unique use case with XEL&#x2019;s own programming language, ePL. To run a custom task, follow the tutorial. This will ensure an easy, streamlined process every time you want to execute a task.
+                </p>
+                <div class="tag-buttons">
+                  <a href="http://docs.xel.org/submit-task.html" target="_blank" class="wrapper-see tutorial" role="button">
+                    <div class="mainbutton see tutorial">
+                      see tutorial
+                    </div>
+                  </a>
+                  <a href="#footer" target="" class="wrapper-Let us help" role="button">
+                    <div class="mainbutton Let us help">
+                      Let us help
+                    </div>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="col-md-6 taker-wrapper">
+            <img class="taker-img" "="" src=" assets/images/layer_giver.png" alt="Taker figure">
+          </div>
+        </div>
+        <div class="questions">
+          <div id="accordion">
+
+            <div class="question card">
+              <div class="btn btn-link card-header " id="1" data-toggle="collapse" data-target="#oneCollapse" aria-expanded="false" aria-controls="oneCollapse">
+                <h5 class="mb-0">
+                  How are the computations verified?
+                </h5>
+                <span class="fas fa-chevron-up"></span>
+                <span class="fas fa-chevron-right"></span>
+              </div>
+              <div id="oneCollapse" class="collapse show" aria-labelledby="1" data-parent="#accordion">
+                <div class="card-body">
+                  Typically, the idea of a blockchain-based super computer is that you pay for others to solve your tasks and return the solution to you. Moreover, because you pay, you certainly want to make damn sure that you get the correct result. Well, XEL has solved that very issue pretty elegantly. The ePL language, as you will learn in the programming tutorial, has a beautiful property that allows the scientist, those who programmed the job, to introduce a verification function. If that verification is not passed, the result will not even be broadcasted by the network. All the solutions that you receive, therefore, can be seen as verified and correct.
+                </div>
+              </div>
+            </div>
+            <div class="question card">
+              <div class="btn btn-link card-header collapsed" id="2" data-toggle="collapse" data-target="#twoCollapse" aria-expanded="false" aria-controls="twoCollapse">
+                <h5 class="mb-0">
+                  What is a bounty reward ?
+                </h5>
+                <span class="fas fa-chevron-up"></span>
+                <span class="fas fa-chevron-right"></span>
+              </div>
+              <div id="twoCollapse" class="collapse " aria-labelledby="2" data-parent="#accordion">
+                <div class="card-body">
+
+                  Once you submit a task on the blockchain, this task is downloaded by nodes which contribute their computational resources to the network - let&apos;s call them &quot;workers&quot; for now. Workers that find actual solutions &#x2013; which we also call &quot;bounties&quot; &#x2013; are rewarded with a &quot;bounty reward&quot; by the scientist paid in XEL tokens. These bounty rewards are set by the scientist when the job is created and should be ideally set to an amount that attracts participation in running their job. As the network grows, competition among scientists to attract participation in running their job increases; therefore, scientists will want to calibrate their bounty rewards to a fair market value to ensure enough interest in their job.
+
+                </div>
+              </div>
+            </div>
+            <div class="question card">
+              <div class="btn btn-link card-header collapsed" id="3" data-toggle="collapse" data-target="#threeCollapse" aria-expanded="false" aria-controls="threeCollapse">
+                <h5 class="mb-0">
+                  Is XEL powerful enough for my computational task ?
+                </h5>
+                <span class="fas fa-chevron-up"></span>
+                <span class="fas fa-chevron-right"></span>
+              </div>
+              <div id="threeCollapse" class="collapse " aria-labelledby="3" data-parent="#accordion">
+                <div class="card-body">
+
+                  Let us answer this with an example. Since training a Deep Neural Network is a very resource intensive tasks, other projects usually have to &quot;assign&quot; individual tasks to individual nodes and only allow this one individual node to work on it. This is the right thing to do because nobody wants to work for 2 hours on a render job only to find out that someone else was quicker. However, this also has one potential drawback: what happens with very slow nodes or nodes that acquire a lock but leave? Such behavior can cause the task to run significantly longer than it would on a home computer. Also, in how many slices do you cut those jobs and how many locks do you offer? This number certainly limits the amount of computation power you can get out of it all. If a task can only be cut into 100 individual pieces (because a smaller denomination would add too much overhead compared to the size of each piece), then you will only get 100 nodes working on your task at most - no matter if the network has 100 or 100,000,000 nodes active. XEL does not have this problem since the computational power of all 100,000,000 nodes would be available at once. This is possible due to how ePL is designed (one iteration of each program runs a few seconds at most) and how it allowed avoiding any locking at all (the search space is designed so large that it is unlikely that two nodes will work on the same task simultaneously).
+
+                </div>
+              </div>
+            </div>
+            <div class="question card">
+              <div class="btn btn-link card-header collapsed" id="4" data-toggle="collapse" data-target="#fourCollapse" aria-expanded="false" aria-controls="fourCollapse">
+                <h5 class="mb-0">
+                  Why decentralised ?
+                </h5>
+                <span class="fas fa-chevron-up"></span>
+                <span class="fas fa-chevron-right"></span>
+              </div>
+              <div id="fourCollapse" class="collapse " aria-labelledby="4" data-parent="#accordion">
+                <div class="card-body">
+                  With decentralization, there is no central point of control, enabling the possibility to expand and scale the network without having infrastructure limitations; the system also eliminates single points of failure and attack through the distributed network nodes.
+                </div>
+              </div>
+            </div>
+            <div class="question card">
+              <div class="btn btn-link card-header collapsed" id="5" data-toggle="collapse" data-target="#fifthCollapse" aria-expanded="false" aria-controls="fifthCollapse">
+                <h5 class="mb-0">
+                  What private data do I have to share with the network ?
+                </h5>
+                <span class="fas fa-chevron-up"></span>
+                <span class="fas fa-chevron-right"></span>
+              </div>
+              <div id="fifthCollapse" class="collapse " aria-labelledby="5" data-parent="#accordion">
+                <div class="card-body">
+                  Both, publishers of the task and the ones performing the task are not required to share their private information at any stage of the process. There is no need to trust third parties since the XEL platform handles the entire process in a trustless manor.
+                </div>
+              </div>
+            </div>
+            <div class="question card">
+              <div class="btn btn-link card-header collapsed" id="6" data-toggle="collapse" data-target="#sixthCollapse" aria-expanded="false" aria-controls="sixthCollapse">
+                <h5 class="mb-0">
+                  This is pretty overwhelming, where do I start ?
+                </h5>
+                <span class="fas fa-chevron-up"></span>
+                <span class="fas fa-chevron-right"></span>
+              </div>
+              <div id="sixthCollapse" class="collapse " aria-labelledby="6" data-parent="#accordion">
+                <div class="card-body">
+
+                  Don&#x2019;t worry! Just follow along the tutorial for <a target="_blank" href="http://docs.xel.org/submit-task.html" class="p-link">submitting a task</a>. In case you are facing any difficulties you can always seek assistance by our supportive community. Check the platforms below.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div id="footer" class="footer">
+        <div class="footer-background">
+          <div class="content-container">
+            <h3 class="title">Join the Community</h3>
+            <p class="text">We are continuously developing and improving the XEL platform. Become a part of our community to find out first about our latest news, or seek assistance if you are facing issues.</p>
+
+            <div class="socials">
+              <a href="https://link.xel.org/discord" role="button" target="_blank">
+                <div class="imgbutton discord">
+                  <img src="assets/images/discord.svg" alt="discord"><span>discord</span>
+                </div>
+              </a>
+              <a href="https://link.xel.org/reddit" role="button" target="_blank">
+                <div class="imgbutton reddit">
+                  <img src="assets/images/reddit.svg" alt="reddit"><span>reddit</span>
+                </div>
+              </a>
+              <a href="https://link.xel.org/twitter" role="button" target="_blank">
+                <div class="imgbutton twitter">
+                  <img src="assets/images/twitter.svg" alt="twitter"><span>twitter</span>
+                </div>
+              </a>
+              <a href="https://link.xel.org/bitcointalk" role="button" target="_blank">
+                <div class="imgbutton bitcointalk">
+                  <img src="assets/images/btc.svg" alt="bitcointalk"><span>bitcointalk</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="btm-con content-container">
+          <div class="bottom bottom-desktop">
+            <div class="links">
+              <div class="footer-link">
+                <h3 class="title">Resources</h3>
+                <a href="litewallet.html" target="">Lite Wallet</a>
+                <a href="xelinewallet.html" target="">XELINE Wallet</a>
+                <a href="miner.html" target="">XEL Miner</a>
+                <a id="url4" href="" target=""></a>
+                <a id="url5" href="" target=""></a>
+              </div>
+            </div>
+            <div class="links">
+              <div class="footer-link">
+                <h3 class="title">Useful Links</h3>
+                <a href="https://link.xel.org/coinmarketcap" target="_blank">Coinmarketcap</a>
+                <a href="https://explorer.xel.org/" target="_blank">Explorer</a>
+                <a href="https://link.xel.org/whitepaper" target="_blank">Whitepaper</a>
+                <a id="url4" href="https://github.com/xel-software" target="_blank">Github</a>
+                <a id="url5" href="" target="_blank"></a>
+              </div>
+            </div>
+            <div class="links">
+              <div class="footer-link">
+                <h3 class="title">Learn more</h3>
+                <a href="http://docs.xel.org/submit-task.html" target="_blank">How to submit your task</a>
+                <a href="http://docs.xel.org/give-power.html" target="_blank">How to provide power</a>
+                <a href="http://docs.xel.org/learn-epl.html" target="_blank">Learn ePL</a>
+                <a id="url4" href="" target="_blank"></a>
+                <a id="url5" href="" target="_blank"></a>
+              </div>
+            </div>
+            <a href="index.html">
+              <div class="logo">
+                <img src="assets/images/xel_white.svg" alt="">
+                <span class="name">xel</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="bottom bottom-mobile">
+            <div class="top">
+              <a href="index.html">
+                <div class="logo">
+                  <img src="assets/images/xel_white.svg" alt="">
+                  <span class="name">xel</span>
+                </div>
+              </a>
+              <div class="links">
+                <div class="footer-link">
+                  <h3 class="title">Learn more</h3>
+                  <a href="http://docs.xel.org/submit-task.html" target="_blank">How to submit your task</a>
+                  <a href="http://docs.xel.org/give-power.html" target="_blank">How to provide power</a>
+                  <a href="http://docs.xel.org/learn-epl.html" target="_blank">Learn ePL</a>
+                  <a id="url4" href="" target="_blank"></a>
+                  <a id="url5" href="" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+            <div class="btm">
+              <div class="links">
+                <div class="footer-link">
+                  <h3 class="title">Resources</h3>
+                  <a href="litewallet.html" target="">Lite Wallet</a>
+                  <a href="xelinewallet.html" target="">XELINE Wallet</a>
+                  <a href="miner.html" target="">XEL Miner</a>
+                  <a id="url4" href="" target=""></a>
+                  <a id="url5" href="" target=""></a>
+                </div>
+              </div>
+              <div class="links">
+                <div class="footer-link">
+                  <h3 class="title">Useful Links</h3>
+                  <a href="https://link.xel.org/coinmarketcap" target="_blank">Coinmarketcap</a>
+                  <a href="https://explorer.xel.org/" target="_blank">Explorer</a>
+                  <a href="https://link.xel.org/whitepaper" target="_blank">Whitepaper</a>
+                  <a id="url4" href="https://github.com/xel-software" target="_blank">Github</a>
+                  <a id="url5" href="" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            <p class="copyrights">2019 - All Rights Reserved &#xA9; xel.org</p>
+            <a class="fromscratch" href="https://fromscratch.gr" target="_blank">Created by <img class="fslogo" src="assets/images/fromscratch_logo_big.svg" alt="fromScratch Logo"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>

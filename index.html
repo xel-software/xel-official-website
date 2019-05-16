@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title> xel | A decentralised super computer. Codable.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="XEL is the first decentralised super computing platform, adapted to execute any computational task on demand">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+    <meta property="og:site_name" content="xel">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="xel | A decentralised super computer. Codable.">
+    <meta property="og:description" content="XEL is the first decentralised super computing platform, adapted to execute any computational task on demand">
+    <meta property="og:url" content="https://xel.org/">
+    <meta property="og:image" content="https://xel.org/assets/images/facebook.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="xel | A decentralised super computer. Codable.">
+    <meta name="twitter:description" content="XEL is the first decentralised super computing platform, adapted to execute any computational task on demand">
+    <meta name="twitter:url" content="https://xel.org/">
+    <meta name="twitter:image" content="https://xel.org/assets/images/twitter.png">
+
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Poppins" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#ffffff">
+
+  </head>
+
+  <body id="body">
+    <script type="text/javascript" src="dependencies/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="dependencies/jquery/jquery.bcSwipe.min.js"></script>
+    <script type="text/javascript" src="dependencies/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/nav.js"></script>
+    <script type="text/javascript" src="dependencies/animejs/anime.min.js"></script>
+    <script type="text/javascript" src="dependencies/clipboard/clipboard.min.js"></script>
+    <script type="text/javascript" src="dependencies/parollerjs/jquery.paroller.min.js"></script>
+    <script type="text/javascript" src="dependencies/lazyload/lazysizes.min.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
+    <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="assets/css/xel.style.css" data-autorefresh="true">
+
+
+
+    <div class="intro intro-background lazyload">
+      <div class="navbar1 content-container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="index.html">
+            <img id="nav_black_logo" src="assets/images/xel_white.svg" alt="Xel logo">
+            <img id="exp_black_logo" src="assets/images/xel_black.svg" alt="Xel logo"><span id="nav-xel">xel</span>
+            <div id="xeldocs"><span id="xeldocs1">xel</span><span id="xeldocs2">Docs</span></div>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fas fa-bars open-toggle"></span>
+            <span class="fas fa-times close-toggle"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <div class="nav-container">
+                <div class="navlinks" id="generalnav">
+                  <li class="nav-item dropdown dropdown-desktop">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Installation
+                    </a>
+                    <div id="navbarDropdownMenu" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="xelinewallet.html">XELINE Wallet</a>
+                      <a class="dropdown-item" href="litewallet.html">Lite Wallet</a>
+                      <a class="dropdown-item" href="miner.html">XEL Miner</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown-mobile">
+                    <a id="mobileInstallation" class="nav-link" href="JavaScript:Void(0);">Installation</a>
+                  </li>
+                  <div id="mobileInstallationMenu" class="dropdown-menu-mobile dropdown-mobile">
+                    <li>
+                      <a class="dropdown-item" href="xelinewallet.html">XELINE Wallet</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="litewallet.html">Lite Wallet</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="miner.html">XEL Miner</a>
+                    </li>
+                  </div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://explorer.xel.org/" target="_blank">explorer</a>
+                  </li>
+                  <li class="nav-item dropdown dropdown-desktop">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      DOCS
+                    </a>
+                    <div id="navbarDropdownMenu2" class="dropdown-menu docs" aria-labelledby="navbarDropdownMenuLink2">
+                      <a class="dropdown-item" target="_blank" href="http://docs.xel.org/submit-task.html">How to submit your task</a>
+                      <a class="dropdown-item" target="_blank" href="http://docs.xel.org/give-power.html">How to provide power</a>
+                      <a class="dropdown-item" target="_blank" href="http://docs.xel.org/learn-epl.html">Learn ePL</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown-mobile">
+                    <a id="mobileDocs" class="nav-link" href="JavaScript:Void(0);">docs</a>
+                  </li>
+                  <div id="mobileDocsMenu" class="dropdown-menu-mobile dropdown-mobile">
+                    <li>
+                      <a class="dropdown-item" target="_blank" href="http://docs.xel.org/submit-task.html">How to submit your task</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" target="_blank" href="http://docs.xel.org/give-power.html">How to provide power</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" target="_blank" href="http://docs.xel.org/learn-epl.html">Learn ePL</a>
+                    </li>
+                  </div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://link.xel.org/whitepaper" target="_blank">whitepaper</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/xel-software" target="_blank">github</a>
+                  </li>
+                </div>
+                <div class="navlinks" id="navfordocs">
+                  <li class="nav-item">
+                    <a class="nav-link" id="navtask" href="submit-task.html">submit your task</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="navpower" href="give-power.html">provide power</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="navepl" href="learn-epl.html">learn epl</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">xel homepage</a>
+                  </li>
+                </div>
+                <div class="dropdown-mobile navsocials">
+                  <div class="line"></div>
+                  <div class="socials-mobile">
+                    <a class="social discord" href="https://link.xel.org/discord" target="_blank">
+                      <img src="assets/images/discord.svg" alt="">
+                    </a>
+                    <a class="social reddit" href="https://link.xel.org/reddit" target="_blank">
+                      <img src="assets/images/reddit.svg" alt="">
+                    </a>
+                    <a class="social twitter" href="https://link.xel.org/twitter" target="_blank">
+                      <img src="assets/images/twitter.svg" alt="">
+                    </a>
+                    <a class="social btctalk" href="https://link.xel.org/bitcointalk" target="_blank">
+                      <img src="assets/images/btc.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="machine">
+        <div class="machine-pusher"></div>
+        <div class="machine-pushed"> <img class="machineimg lazyload" data-src="assets/images/layer_power_machine.png" alt=""></div>
+
+      </div>
+
+      <div class="city">
+        <img class="cityimg lazyload" data-src="assets/images/layer_city.png" alt="Xel City">
+      </div>
+
+      <div class="foreground">
+        <div class="content-container main-info">
+          <h1 class="title">A decentralised super computer.
+            <br>Codable.</h1>
+          <h2 class="subtitle">XEL is the first decentralised super computing platform, adapted to execute any computational task on demand.</h2>
+          <div class="introbuttons">
+            <div class="learnmore">
+              <a href="#task" target="" class="wrapper-Learn more" role="button">
+                <div class="mainbutton Learn more">
+                  Learn more
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="elements">
+          <div class="chars">
+            <div class="elblock">
+              <img class="blkimg lazyload" data-src="assets/images/block_cube.png" alt="">
+            </div>
+
+            <div class="char1">
+              <img class="char1img lazyload" data-src="assets/images/layer_character1.svg" alt="">
+            </div>
+
+            <div class="char2">
+              <img class="char2img lazyload" data-src="assets/images/Layer_character2.svg" alt="">
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+      <!-- <p class="content-container c-transactions"></span></p> -->
+    </div>
+    <div class="index-mask">
+      <article class="xelfirst content-container">
+        <h2 class="xelinit">
+          The XEL initiative
+        </h2>
+        <p class="alias-text">
+          XEL is an open source project aiming to disrupt the way computing power is bought and sold in today&apos;s global market. To achieve this XEL is creating a decentralized trustless super computer, utilizing cryptography and blockchain technology. The platform can execute a vast array of tasks in need of computational resources in a P2P distributed way.
+        </p>
+        <p class="alias-text">
+          XEL offers a versatile and flexible system by enabling self programmable tasks instead of hardcoded use cases. This is achieved thanks to the proprietary ElasticPL (ePL) programming language. The system offers trustless access to computational resources at any time and from any location, while keeping privacy and anonymity.
+        </p>
+      </article>
+
+      <div class="aliasfor content-container">
+        <h3 class="alias-title">Integrate with XEL platform</h3>
+        <div class="abs abs-desktop">
+          <div class="ab ab-box">
+            <h1 class="ab-title">Scientific Applications</h1>
+            <h2 class="ab-subtitle">XEL platform is a great fit for data visualization, modelling and simulations within advanced chemistry, biophysics, high energy physics, bioinformatics, engineering science, and data medicine, by supplying adaptive, tailored, self programmable tasks, and on demand computing power.</h2>
+          </div>
+          <div class="ab ab-box">
+            <h1 class="ab-title">Machine Learning</h1>
+            <h2 class="ab-subtitle">XEL&#x2019;s super computing system can assist in the transition from physical, prototype based product design to computational (virtual), prototype-based product design. Thus enabling substantially better, more creative results, while saving on time and cost.</h2>
+          </div>
+          <div class="ab ab-box">
+            <h1 class="ab-title">Visual Prototyping</h1>
+            <h2 class="ab-subtitle">Many companies are deploying services, which are largely based on machine learning algorithms for sophisticated processing of large amounts of data. XEL platform offers a environment for testing such services , and can also be used to demonstrate Proof of Concept for various AI algorithms.</h2>
+          </div>
+        </div>
+        <div class="abs-mobile">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="ab ab-box">
+                  <h1 class="ab-title">Scientific Applications</h1>
+                  <h2 class="ab-subtitle">XEL platform is a great fit for data visualization, modelling and simulations within advanced chemistry, biophysics, high energy physics, bioinformatics, engineering science, and data medicine, by supplying adaptive, tailored, self programmable tasks, and on demand computing power.</h2>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="ab ab-box">
+                  <h1 class="ab-title">Machine Learning</h1>
+                  <h2 class="ab-subtitle">XEL&#x2019;s super computing system can assist in the transition from physical, prototype based product design to computational (virtual), prototype-based product design. Thus enabling substantially better, more creative results, while saving on time and cost.</h2>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="ab ab-box">
+                  <h1 class="ab-title">Visual Prototyping</h1>
+                  <h2 class="ab-subtitle">Many companies are deploying services, which are largely based on machine learning algorithms for sophisticated processing of large amounts of data. XEL platform offers a environment for testing such services , and can also be used to demonstrate Proof of Concept for various AI algorithms.</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="height: 10px;top: 2px;position: relative;margin:0;background-color: white;border-top: 0;z-index: 200;">
+      <div id="task">
+        <div class="taglines content-container">
+          <div class="taker-wrapper">
+            <div class="taker">
+              <div class="tagline">
+                <article>
+                  <div class="top Taker">
+                    <h2 class="tag-title">Execute your tasks on XEL platform</h2>
+                    <div class="line"></div>
+                  </div>
+                  <p class="tag-text">Take advantage of XEL&#x2019;s network massive power resources and execute any computational task, while avoiding the cost of deploying cloud services or purchasing your own hardware.</p>
+                  <div class="tag-buttons">
+                    <a href="taker.html" target="" class="wrapper-SUBMIT a TASK" role="button">
+                      <div class="mainbutton SUBMIT a TASK">
+                        SUBMIT a TASK
+                      </div>
+                    </a>
+                    <a href="#footer" target="" class="wrapper-Let us help" role="button">
+                      <div class="mainbutton Let us help">
+                        Let us help
+                      </div>
+                    </a>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="taker-img">
+              <img id="hole" src="assets/images/hole.svg" alt="">
+              <img id="takerimg" "="" src=" assets/images/layer_giver.png" alt="">
+            </div>
+          </div>
+          <div class="giver-wrapper">
+            <div class="giver">
+              <div class="tagline">
+                <article>
+                  <div class="top Giver">
+                    <h2 class="tag-title">Provide your power to XEL&#x2019;s network</h2>
+                    <div class="line"></div>
+                  </div>
+                  <p class="tag-text">Become a part of XEL&#x2019;s network by providing hardware resources and earn tokens from helping other users resolve demanding computational tasks for advanced scientific research.</p>
+                  <div class="tag-buttons">
+                    <a href="giver.html" target="" class="wrapper-PROVIDE POWER" role="button">
+                      <div class="mainbutton PROVIDE POWER">
+                        PROVIDE POWER
+                      </div>
+                    </a>
+                    <a href="#footer" target="" class="wrapper-Let us help" role="button">
+                      <div class="mainbutton Let us help">
+                        Let us help
+                      </div>
+                    </a>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="giver-img">
+              <img id="giverimg" src="assets/images/layer_taker.png" alt="">
+              <img class="giver-block" src="assets/images/element_miner.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="features content-container">
+      <div class="tabs">
+        <ul class="nav nav-tabs">
+          <li class="active"><a class="active" id="nav-tab2" data-toggle="tab" href="#tab2">Software components</a></li>
+          <li><a id="nav-tab1" data-toggle="tab" href="#tab1">Technology and features</a></li>
+          <div class="line"></div>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 tbs">
+          <div class="tabs">
+            <div class="tab-content">
+              <div id="tab2" class="tab-pane fade in active show">
+                <h3 class="title">Software components</h3>
+                <p class="text">The XEL ecosystem is comprised of several main components working in fluid synchronous.</p>
+                <p class="text">
+                  The execution and monitoring of arbitrary computational tasks is available via the user&#x2019;s interaction with the software components. Each component provides a user friendly interface, enabling a straightforward, streamlined journey for the user.</p>
+              </div>
+              <div id="tab1" class="tab-pane fade">
+                <h3 class="title">Technology and features</h3>
+                <p class="text">
+                </p>
+                <div class="listitem">
+                  <h5 class="l-title">Opensource</h5>
+                  <p class="l-text">As an open source project, XEL&#x2019;s code base is always visible and available for peer review and contribution by the community, and any interested party.</p>
+                </div>
+                <div class="listitem">
+                  <h5 class="l-title">Trustless</h5>
+                  <p class="l-text">Both, publishers of the task and the ones performing the task are not required to share their private information at any stage of the process. There is no need to trust third parties since the XEL platform handles the entire process in a trustless manor.</p>
+                </div>
+                <div class="listitem">
+                  <h5 class="l-title">Modular</h5>
+                  <p class="l-text">Future developments on top of the existing platform are possible in a modular way. For instance, it will be possible for developers to implement smart contracts on top of Elastic VM (Virtual Machine) in the future.</p>
+                </div>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div id="tab1content" class="fade tcont">
+            <div class="listitem">
+              <h5 class="l-title">Decentralized &amp; Distributed</h5>
+              <p class="l-text">Instead of using a central point of authority, XEL uses blockchain technology to form the consensus, and uses a special consensus-based protocol for work distribution, verification, and collection.</p>
+            </div>
+            <div class="listitem">
+              <h5 class="l-title">Flexible</h5>
+              <p class="l-text">Thanks to self programmable tasks, the XEL platform offers a highly flexible system. Therefore, anyone can program unique use cases with XEL&#x2019;s own programming language (ePL).</p>
+            </div>
+          </div>
+          <div id="tab2content" class="fade active show tcont">
+            <div class="features-bubbles fts-desktop">
+              <div class="row b-cont">
+                <a target="_blank href=" http:&#x2f;&#x2f;docs.xel.org&#x2f;learn-epl.html"="">
+                  <div class="bubble m">
+                    <img class="b-img" src="assets/images/element_elasticPL.svg" alt="Features">
+                    <p class="b-title">ElasticPL (ePL)</p>
+                  </div>
+                </a>
+                <a target=" href=" miner.html"="">
+                  <div class="bubble s">
+                    <img class="b-img" src="assets/images/element_miner.png" alt="Features">
+                    <p class="b-title">XEL Miner</p>
+                  </div>
+                </a>
+              </div>
+              <div class="row b-cont second">
+                <a target=" href=" litewallet.html"="">
+                  <div class="bubble s">
+                    <img class="b-img" src="assets/images/element_wallet.svg" alt="Features">
+                    <p class="b-title">Lite Wallet</p>
+                  </div>
+                </a>
+                <a target=" href=" xelinewallet.html"="">
+                  <div class="bubble l">
+                    <img class="b-img" src="assets/images/element_center.svg" alt="Features">
+                    <p class="b-title">XELINE Command Center</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="fts-mobile">
+              <div id="carouselIndicators2" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselIndicators2" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselIndicators2" data-slide-to="1"></li>
+                  <li data-target="#carouselIndicators2" data-slide-to="2"></li>
+                  <li data-target="#carouselIndicators2" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a target=" href=" #"="">
+                      <div class="bubble m">
+                        <img class="b-img" src="assets/images/element_elasticPL.svg" alt="Features">
+                        <p class="b-title">ElasticPL (ePL)</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a target=" href=" #"="">
+                      <div class="bubble s">
+                        <img class="b-img" src="assets/images/element_miner.png" alt="Features">
+                        <p class="b-title">XEL Miner</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a target=" href=" #"="">
+                      <div class="bubble s">
+                        <img class="b-img" src="assets/images/element_wallet.svg" alt="Features">
+                        <p class="b-title">Lite Wallet</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a target=" href=" #"="">
+                      <div class="bubble l">
+                        <img class="b-img" src="assets/images/element_center.svg" alt="Features">
+                        <p class="b-title">XELINE Command Center</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xeldata">
+      <div class="content-container">
+        <div class="top">
+          <div class="logo-container">
+            <img class="logo" src="assets/images/xel_black.svg" alt="">
+            <div class="title">
+              XEL
+              <span class="sub">(XEL)</span>
+            </div>
+          </div>
+          <div class="value">
+            <div class="tousd"><span id="xelusd"></span><span class="usd">USD</span></div>
+            <div class="tobtc"><span id="xelbtc"></span>BTC
+              <span class="perc">(
+                    <span style="display:none" class="plusperc">+</span>
+              <span style="display:none" class="minperc">-</span>
+              <span id="xelperc"></span>
+              %)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="xeltable">
+          <div class="table table-borderless">
+            <div class="row thead">
+              <div class="col-md-3">market Cap</div>
+              <div class="col-md-3">volume(24h)</div>
+              <div class="col-md-3">circulating supply</div>
+              <div class="col-md-3">total supply</div>
+            </div>
+            <div class="trs xeltable-desktop">
+              <div class="row tr">
+                <div class="market-cap-usd col-md-3"><span>$</span><span>USD</span></div>
+                <div class="vol-usd col-md-3"><span>$</span><span>USD</span></div>
+                <div class="supply col-md-3"><span>$</span><span>XEL</span></div>
+                <div class="tot-supply col-md-3"><span>$</span><span>XEL</span></div>
+              </div>
+              <div class="row tr">
+                <div class="market-cap-btc col-md-3 btc"><span>BTC</span></div>
+                <div class="vol-btc col-md-3 btc"><span>BTC</span></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+              </div>
+            </div>
+            <div class="trs xeltable-mobile">
+              <div class="row tr">
+                <div class="col-md-3">
+                  <div class="market-cap-usd"></div>
+                  <div class="market-cap-btc btc"></div>
+                </div>
+                <div class="col-md-3">
+                  <div class="vol-usd"></div>
+                  <div class="vol-btc btc"><span>BTC</span></div>
+                </div>
+                <div class="supply col-md-3"><span>$</span><span>XEL</span></div>
+                <div class="tot-supply col-md-3"><span>$</span><span>XEL</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ex-xel">
+          <h5 class="title">Where to Exchange XEL</h5>
+          <div class="exchangers">
+            <div class="exchanger">
+              <div class="x-container">
+                <a href="https://upbit.com/exchange?code=CRIX.UPBIT.BTC-XEL" target="_blank">
+                  <img class="x-img" src="assets/images/upbit.png" alt="UPbit">
+                </a>
+              </div>
+              <h5 class="x-title">UPbit</h5>
+            </div>
+            <div class="exchanger">
+              <div class="x-container">
+                <a href="https://international.bittrex.com/Market/Index?MarketName=BTC-XEL" target="_blank">
+                  <img class="x-img" src="assets/images/bittrex.png" alt="Bittrex">
+                </a>
+              </div>
+              <h5 class="x-title">Bittrex</h5>
+            </div>
+            <!-- <cb:comp cb:type="exchanger" cb:url="#"
+                    cb:imgurl=""></cb:comp> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="footer" class="footer">
+      <div class="footer-background">
+        <div class="content-container">
+          <h3 class="title">Join the Community</h3>
+          <p class="text">We are continuously developing and improving the XEL platform. Become a part of our community to find out first about our latest news, or seek assistance if you are facing issues.</p>
+
+          <div class="socials">
+            <a href="https://link.xel.org/discord" role="button" target="_blank">
+              <div class="imgbutton discord">
+                <img src="assets/images/discord.svg" alt="discord"><span>discord</span>
+              </div>
+            </a>
+            <a href="https://link.xel.org/reddit" role="button" target="_blank">
+              <div class="imgbutton reddit">
+                <img src="assets/images/reddit.svg" alt="reddit"><span>reddit</span>
+              </div>
+            </a>
+            <a href="https://link.xel.org/twitter" role="button" target="_blank">
+              <div class="imgbutton twitter">
+                <img src="assets/images/twitter.svg" alt="twitter"><span>twitter</span>
+              </div>
+            </a>
+            <a href="https://link.xel.org/bitcointalk" role="button" target="_blank">
+              <div class="imgbutton bitcointalk">
+                <img src="assets/images/btc.svg" alt="bitcointalk"><span>bitcointalk</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="btm-con content-container">
+        <div class="bottom bottom-desktop">
+          <div class="links">
+            <div class="footer-link">
+              <h3 class="title">Resources</h3>
+              <a href="litewallet.html" target="">Lite Wallet</a>
+              <a href="xelinewallet.html" target="">XELINE Wallet</a>
+              <a href="miner.html" target="">XEL Miner</a>
+              <a id="url4" href="" target=""></a>
+              <a id="url5" href="" target=""></a>
+            </div>
+          </div>
+          <div class="links">
+            <div class="footer-link">
+              <h3 class="title">Useful Links</h3>
+              <a href="https://link.xel.org/coinmarketcap" target="_blank">Coinmarketcap</a>
+              <a href="https://explorer.xel.org/" target="_blank">Explorer</a>
+              <a href="https://link.xel.org/whitepaper" target="_blank">Whitepaper</a>
+              <a id="url4" href="https://github.com/xel-software" target="_blank">Github</a>
+              <a id="url5" href="" target="_blank"></a>
+            </div>
+          </div>
+          <div class="links">
+            <div class="footer-link">
+              <h3 class="title">Learn more</h3>
+              <a href="http://docs.xel.org/submit-task.html" target="_blank">How to submit your task</a>
+              <a href="http://docs.xel.org/give-power.html" target="_blank">How to provide power</a>
+              <a href="http://docs.xel.org/learn-epl.html" target="_blank">Learn ePL</a>
+              <a id="url4" href="" target="_blank"></a>
+              <a id="url5" href="" target="_blank"></a>
+            </div>
+          </div>
+          <a href="index.html">
+            <div class="logo">
+              <img src="assets/images/xel_white.svg" alt="">
+              <span class="name">xel</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="bottom bottom-mobile">
+          <div class="top">
+            <a href="index.html">
+              <div class="logo">
+                <img src="assets/images/xel_white.svg" alt="">
+                <span class="name">xel</span>
+              </div>
+            </a>
+            <div class="links">
+              <div class="footer-link">
+                <h3 class="title">Learn more</h3>
+                <a href="http://docs.xel.org/submit-task.html" target="_blank">How to submit your task</a>
+                <a href="http://docs.xel.org/give-power.html" target="_blank">How to provide power</a>
+                <a href="http://docs.xel.org/learn-epl.html" target="_blank">Learn ePL</a>
+                <a id="url4" href="" target="_blank"></a>
+                <a id="url5" href="" target="_blank"></a>
+              </div>
+            </div>
+          </div>
+          <div class="btm">
+            <div class="links">
+              <div class="footer-link">
+                <h3 class="title">Resources</h3>
+                <a href="litewallet.html" target="">Lite Wallet</a>
+                <a href="xelinewallet.html" target="">XELINE Wallet</a>
+                <a href="miner.html" target="">XEL Miner</a>
+                <a id="url4" href="" target=""></a>
+                <a id="url5" href="" target=""></a>
+              </div>
+            </div>
+            <div class="links">
+              <div class="footer-link">
+                <h3 class="title">Useful Links</h3>
+                <a href="https://link.xel.org/coinmarketcap" target="_blank">Coinmarketcap</a>
+                <a href="https://explorer.xel.org/" target="_blank">Explorer</a>
+                <a href="https://link.xel.org/whitepaper" target="_blank">Whitepaper</a>
+                <a id="url4" href="https://github.com/xel-software" target="_blank">Github</a>
+                <a id="url5" href="" target="_blank"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="copyrights">2019 - All Rights Reserved &#xA9; xel.org</p>
+          <a class="fromscratch" href="https://fromscratch.gr" target="_blank">Created by <img class="fslogo" src="assets/images/fromscratch_logo_big.svg" alt="fromScratch Logo"></a>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>

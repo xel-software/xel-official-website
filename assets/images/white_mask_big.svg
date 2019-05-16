@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5760px" height="730px" viewBox="0 0 5760 730" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M3840,0 L5760,0 L5760,589 L3840,589 L3840,589.47631 C3289.50347,776.84123 2963.49514,776.84123 2861.975,589.47631 C2774.23466,427.5433 2933.22955,334.116874 2809.9638,156.338379 C2674.69412,-35.5679643 2379.13652,-48.8747502 1923.29099,116.418021 C1922.21567,116.807941 1920.00443,117.615081 1920.00221,117.615081 C1920.00196,117.615081 1920.00122,78.4100543 1920,2.27373675e-13 L3840,2.27373675e-13 Z M0,0 L1920,0 L1920,118 L0,118 L0,0 Z" id="path-1"></path>
+    </defs>
+    <g id="INSPO" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Combined-Shape" fill="#FFFFFF" xlink:href="#path-1"></use>
+    </g>
+</svg>
