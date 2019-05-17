@@ -1722,9 +1722,9 @@ nav .close-toggle {
   display: none; }
 
 nav.navbar {
-  transition: 500ms ease-in; }
+  transition: 0ms; }
   nav.navbar .navbar-collapse {
-    transition: 500ms ease-out; }
+    transition: 0ms; }
 
 nav .navbar-toggler {
   border: 0;
@@ -1822,7 +1822,7 @@ nav .dropdown .dropdown-menu {
     height: 0 !important; }
   .navbar-collapse.collapse.show {
     max-height: none;
-    height: 100vh; }
+    height: calc(100vh - 67px); }
   .navbar1 {
     position: fixed;
     z-index: 10001;
@@ -1865,7 +1865,7 @@ nav .dropdown .dropdown-menu {
     nav .nav-container .navsocials {
       display: flex;
       flex-direction: column;
-      flex: 1 1 auto; }
+      flex: 0 0 100px; }
   nav .dropdown-mobile {
     display: block; }
     nav .dropdown-mobile .line {
@@ -1875,7 +1875,7 @@ nav .dropdown .dropdown-menu {
     nav .dropdown-mobile .socials-mobile {
       display: flex;
       justify-content: space-between;
-      padding: 32px 0; }
+      margin: auto 0; }
       nav .dropdown-mobile .socials-mobile .social.slack img {
         opacity: 0.63; }
       nav .dropdown-mobile .socials-mobile .social.twitter img {
